@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <math.h>
+
+int mult (int N1, int N2){
+  int multiplica;
+  multiplica = N1 * N2;
+  return (multiplica);
+}
+int div (int N3, int N4){
+  int divide;
+  divide = (N3 / N4);
+  return (divide);
+}
+int somar (int N5, int N6){
+  int adiciona;
+  adiciona = (N5 + N6);
+  return (adiciona);
+}
+int sub (int N7, int N8){
+  int subtrair;
+  subtrair = N7 - N8;
+  return (subtrair);
+}
+ 
+int main() {
+  float numero1;
+  float numero2;
+  int func;
+  int multiplica;
+  int divide;
+  int adiciona;
+  int subtrair;
+  printf("Bem vindo a tabuada online\nDigite o primeiro numero:");
+  scanf("%f.0", &numero1);
+  printf("Por favor, digite o segundo numero:");
+  scanf("%f.0", &numero2);
+  printf("Aperte:\n");
+  printf("1 para multiplicação\n2 para divisão\n3 para soma\n4 para subtração\n");  
+  scanf("%d", &func);
+  multiplica = mult(numero1, numero2);
+  divide = div(numero1, numero2);
+  adiciona = somar(numero1, numero2);
+  subtrair = sub(numero1, numero2);
+  if (func == 1){
+    printf("Você selecionou a opção %d\nO resultado é   %d", func, multiplica);
+  }
+  else if (func == 2){
+    printf("Você selecionou a opção %d\nO resultado é %d", func, divide);
+  }
+   else if (func == 3){
+    printf("Você selecionou a opção %d\nO resultado é %d", func, adiciona);
+  }
+   else if (func == 4){
+    printf("Você selecionou a opção %d\nO resultado é %d", func, subtrair);
+  }
+}
+
+  
